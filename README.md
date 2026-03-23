@@ -1,116 +1,167 @@
 # ESPAÑOL
 
-# Reducción de dimensionalidad con PCA y t-SNE
+# 📊 Reducción de Dimensionalidad con PCA y t-SNE
 
-Descripción
+---
 
-Este proyecto analiza técnicas de reducción de dimensionalidad utilizando PCA y t-SNE aplicadas a un dataset de alta dimensionalidad.
+## 📌 Descripción
 
-El objetivo es simplificar la estructura de los datos manteniendo patrones relevantes para facilitar su visualización e interpretación.
+Este proyecto tiene como objetivo aplicar técnicas de reducción de dimensionalidad, específicamente **PCA (Análisis de Componentes Principales)** y **t-SNE**, sobre un dataset de alta dimensionalidad.
 
-📂 Dataset
+El análisis se basa en el dataset **Human Activity Recognition (HAR)**, el cual contiene información proveniente de sensores de smartphones y presenta más de 500 variables, lo que lo convierte en un caso ideal para aplicar estas técnicas.
 
-Nombre: Human Activity Recognition (HAR)
+El propósito es simplificar la estructura de los datos, mejorar su interpretabilidad y evaluar su utilidad tanto para la visualización como para el modelado predictivo.
 
-Fuente: UCI Machine Learning Repository
+---
 
-Variables: 561
+## 🎯 Objetivos
 
-Observaciones: 7352
+- Reducir la dimensionalidad del dataset
+- Analizar la varianza explicada mediante PCA
+- Visualizar los datos en 2 dimensiones
+- Identificar patrones y agrupaciones
+- Comparar el desempeño de PCA y t-SNE
+- Evaluar el uso de estas técnicas en modelos predictivos
 
-Los datos provienen de sensores de smartphones (acelerómetro y giroscopio).
+---
 
-⚙️ Metodología
+## 🧠 Tecnologías utilizadas
 
-Carga y exploración de datos
+- Python 🐍
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
 
-Escalamiento con StandardScaler
+---
 
-Aplicación de:
+## 📂 Dataset
 
-PCA
+**Nombre:** Human Activity Recognition (HAR)  
+**Fuente:** https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones  
 
-t-SNE
+El dataset contiene **561 variables** y miles de observaciones, lo que lo hace adecuado para aplicar técnicas de reducción dimensional.
 
-Visualización en 2D
+---
 
-Comparación de resultados
+## ⚙️ Metodología
 
-📈 Resultados
+1. Carga y exploración del dataset  
+2. Escalamiento de datos con StandardScaler  
+3. Aplicación de PCA  
+   - Análisis de varianza explicada  
+   - Selección del número óptimo de componentes  
+4. Aplicación de t-SNE  
+   - Visualización en 2D  
+   - Ajuste de parámetros  
+5. Comparación entre PCA y t-SNE  
+6. Reflexión final  
 
-PCA muestra la estructura global de los datos.
+---
 
-t-SNE permite observar agrupaciones más claras.
+## 📊 Resultados
 
-🧠 Conclusión
+- **PCA** permite reducir la dimensionalidad manteniendo la mayor parte de la varianza, siendo útil para procesos de modelado.
+- **t-SNE** logra una mejor visualización de los datos, revelando clusters bien definidos y patrones no lineales.
 
-Para la presentación de insights, t-SNE resulta más adecuado, ya que permite identificar patrones y segmentos de manera más clara.
+---
+
+## 🧩 Conclusiones
+
+- PCA es una técnica eficiente para reducción dimensional en pipelines de machine learning.
+- t-SNE es ideal para exploración visual y análisis de patrones.
+- La combinación de ambas técnicas permite obtener un análisis más completo del dataset.
+
+---
+
+## 📁 Estructura del proyecto
+
+├── dimensionality_reduction_pca_tsne.ipynb
+├── X_train.txt
+├── y_train.txt
+├── activity_labels.txt
+├── README.md
 
 # ENGLISH
 
-# Dimensionality Reduction with PCA and t-SNE
+# 📊 Dimensionality Reduction with PCA and t-SNE
 
-Overview
+---
 
-This project explores dimensionality reduction techniques using Principal Component Analysis (PCA) and t-distributed Stochastic Neighbor Embedding (t-SNE) applied to a high-dimensional dataset.
+## 📌 Description
 
-The objective is to transform a dataset with a large number of variables into a lower-dimensional representation while preserving meaningful patterns, enabling better visualization and interpretation.
+This project aims to apply dimensionality reduction techniques, specifically **PCA (Principal Component Analysis)** and **t-SNE**, on a high-dimensional dataset.
 
-📂 Dataset
+The analysis is based on the **Human Activity Recognition (HAR)** dataset, which contains data collected from smartphone sensors and includes more than 500 features, making it ideal for applying these techniques.
 
-Name: Human Activity Recognition (HAR) Dataset
+The goal is to simplify the structure of the data, improve interpretability, and evaluate its usefulness for both visualization and predictive modeling.
 
-Source: UCI Machine Learning Repository
+---
 
-Features: 561 numerical variables
+## 🎯 Objectives
 
-Observations: 7352 samples
+- Reduce the dimensionality of the dataset  
+- Analyze the explained variance using PCA  
+- Visualize the data in 2 dimensions  
+- Identify patterns and clusters  
+- Compare the performance of PCA and t-SNE  
+- Evaluate the use of these techniques in predictive models  
 
-The dataset contains features extracted from smartphone sensors (accelerometer and gyroscope) during different human activities.
+---
 
-🛠️ Tools & Technologies
+## 🧠 Technologies Used
 
-Python
+- Python 🐍  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Scikit-learn  
 
-NumPy
+---
 
-Pandas
+## 📂 Dataset
 
-Scikit-learn
+**Name:** Human Activity Recognition (HAR)  
+**Source:** https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones  
 
-Matplotlib
+The dataset contains **561 features** and thousands of observations, making it suitable for dimensionality reduction techniques.
 
-⚙️ Methodology
+---
 
-Data loading and inspection
+## ⚙️ Methodology
 
-Data scaling using StandardScaler
+1. Data loading and exploration  
+2. Data scaling using StandardScaler  
+3. PCA application  
+   - Explained variance analysis  
+   - Selection of optimal number of components  
+4. t-SNE application  
+   - 2D visualization  
+   - Parameter configuration  
+5. Comparison between PCA and t-SNE  
+6. Final reflection  
 
-Dimensionality reduction with:
+---
 
-PCA (linear method)
+## 📊 Results
 
-t-SNE (non-linear method)
+- **PCA** reduces dimensionality while preserving most of the variance, making it suitable for modeling tasks.  
+- **t-SNE** provides better data visualization, revealing well-defined clusters and non-linear patterns.  
 
-Visualization in 2D
+---
 
-Comparison of results
+## 🧩 Conclusions
 
-📈 Results
+- PCA is an efficient technique for dimensionality reduction in machine learning pipelines.  
+- t-SNE is ideal for exploratory analysis and visualization of patterns.  
+- Combining both techniques provides a more comprehensive understanding of the dataset.  
 
-PCA preserves the global structure of the data but does not clearly separate clusters.
+---
 
-t-SNE reveals well-defined clusters, making it easier to identify patterns and groupings.
+## 📁 Project Structure
 
-🧠 Key Insights
-
-High-dimensional datasets benefit significantly from dimensionality reduction techniques.
-
-PCA is efficient and useful for general structure analysis.
-
-t-SNE is more effective for identifying clusters and local patterns.
-
-⚖️ Conclusion
-
-For presenting insights (e.g., to a marketing team), t-SNE is the preferred method due to its ability to highlight groupings clearly. However, PCA remains valuable as a preprocessing step due to its speed and interpretability.
-
+├── dimensionality_reduction_pca_tsne.ipynb
+├── X_train.txt
+├── y_train.txt
+├── activity_labels.txt
+├── README.md
